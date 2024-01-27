@@ -1,0 +1,10 @@
+<div id="book-page">
+    <h1>{{ product.title }}</h1>
+    <p>O preço desse produto é {{ product.price }}</p>
+    <div class="actions">
+        <a href="/products/edit/{{product.id}}">Editar</a>
+        <form action="/products/delete/{{ product.id }}" method="POST">
+            <input type="submit" value="Remover">
+        </form>
+    </div>
+</div>

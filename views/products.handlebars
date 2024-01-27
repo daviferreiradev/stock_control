@@ -1,0 +1,9 @@
+<h1>Lista de produtos</h1>
+<a href="/">Adicionar produto</a>
+<div class="books-container">
+    {{#each products}}
+        <div>
+            #{{this.id}} - <a href="/product/{{this.id}}">{{this.title}}</a> - {{this.price}}
+        </div>
+    {{/each}}
+</div>
